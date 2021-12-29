@@ -9,7 +9,7 @@ const Nav = (props) => {
   return (
     <nav className='nav-bar'>
 
-      <NavLink to='/home'>Home</NavLink>
+      <NavLink to='/'>Home</NavLink>
       <NavLink to='about'>About Me</NavLink>
       <NavLink to='/skills'>Skills</NavLink>
       <NavLink to='/projects'>Projects</NavLink>
