@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 // Components and assets, together at last
 
 
-const Nav = (props) => {
+const Nav = () => {
 
   return (
     <nav className='nav-bar'>
