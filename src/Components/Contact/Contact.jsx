@@ -15,8 +15,6 @@ const Contact = () => {
         <div className='contact'>
           <h1>Contact:</h1>
           <h3>Drop a line sometime! Here's some ways to reach out to me. Thanks for stopping by!</h3>
-          {/* Add image with links to my personal contact information */}
-          {/* use fontawesome icons */}
         </div>
         <div className='contact-links'>
           <h3>My links!</h3>
@@ -39,7 +37,7 @@ const Contact = () => {
               }}
               options={{
                 height: '400',
-                width: '350',
+                width: '800',
               }}
             />
           </div>
