@@ -30,7 +30,7 @@ h1 {
   /* text-shadow: 2px 2px purple; */
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 30%;
+  margin-top: 0%;
     text-align: center;
     font-size: 1.6rem;
     font-family: 'opensans-regular', sans-serif;
@@ -48,7 +48,7 @@ h1 {
 h3, p {
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 10%;
+  margin-top: 5%;
     text-align: center;
     font-size: 1.2rem;
     font-family: 'opensans-regular', sans-serif;
@@ -74,7 +74,7 @@ h3, p {
 }
 
 .tweet {
-  height: fit-content;
+  
 }
 
 .App {
