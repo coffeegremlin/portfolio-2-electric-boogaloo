@@ -7,17 +7,63 @@ main {
   overflow: hidden;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  
 }
 
 nav {
   display: flex;
   align-items: center;
   justify-content: right;
-  padding: 0px 15px 0px 15px;
-  border-bottom: 1px solid rgb(212, 212, 212);
+  padding: 10px 15px 10px 15px;
+  border-bottom: 2px solid rgb(212, 212, 212);
 }
 
-.home {
+.navLink {
+  padding-left: 1%;
+  padding-right: 1%;
+  font-family: 'Blinker', sans-serif;
+  font-weight: bold;
+  font-size: 1.0rem;
+}
+
+h1 {
+  /* text-shadow: 2px 2px purple; */
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 30%;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'opensans-regular', sans-serif;
+    color: #ffffcc;
+    text-shadow: 
+    0 0 5px #fff,
+    0 0 10px #fff, 
+    0 0 20px red, 
+    0 0 30px red, 
+    0 0 40px red, 
+    0 0 55px red, 
+    0 0 70px red;
+}
+
+h3, p {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'opensans-regular', sans-serif;
+    color: #ffffcc;
+    text-shadow: 
+    0 0 5px #fff,
+    0 0 10px #fff, 
+    0 0 20px blue, 
+    0 0 30px blue, 
+    0 0 40px blue, 
+    0 0 55px blue, 
+    0 0 70px blue;
+}
+
+.background-img {
   height: 100%;
   display: flex;
   align-items: center;
@@ -25,6 +71,10 @@ nav {
   justify-content: center;
   background-size: cover;
   background-position: center center;
+}
+
+.tweet {
+  height: fit-content;
 }
 
 .App {
