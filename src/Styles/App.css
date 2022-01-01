@@ -26,13 +26,59 @@ nav {
   font-size: 1.0rem;
 }
 
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px red,
+      0 0 80px red,
+      0 0 90px red,
+      0 0 100px red,
+      0 0 150px red;
+  }
+  20%, 24%, 55% {       
+    text-shadow: none;
+  }
+}
+
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px blue,
+      0 0 80px blue,
+      0 0 90px blue,
+      0 0 100px blue,
+      0 0 150px blue;
+  }
+  0% {
+    /* A slightly smaller blur radius */
+    text-shadow:
+      0 0 4px #fff,
+      0 0 10px #fff,
+      0 0 18px #fff,
+      0 0 38px blue,
+      0 0 73px blue,
+      0 0 80px blue,
+      0 0 94px blue,
+      0 0 140px blue;
+  }
+}
+
 h1 {
-  /* text-shadow: 2px 2px purple; */
+  text-transform: uppercase;
+  animation: flicker 1.5s infinite alternate;
+  font-weight: 400;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 0%;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 4.2rem;
     font-family: 'opensans-regular', sans-serif;
     color: #ffffcc;
     text-shadow: 
@@ -49,8 +95,10 @@ h3, p {
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 5%;
+  /* animation: pulsate 2.5s infinite alternate;  */
+  /* animation: pulsate 0.11s ease-in-out infinite alternate;  */
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-family: 'opensans-regular', sans-serif;
     color: #ffffcc;
     text-shadow: 
@@ -72,6 +120,30 @@ h3, p {
   background-size: cover;
   background-position: center center;
   z-index: 1;
+}
+
+#myname {
+  padding-bottom: 40px;
+}
+
+#myinfo {
+  
+}
+
+#nateimg {
+  width: 25%;
+  padding: 30px;
+  border: solid 2px #ffffcc;
+  border-radius: 5%;
+  color: #ffffcc;
+    box-shadow: 
+    0 0 5px #fff,
+    0 0 10px #fff, 
+    0 0 20px red, 
+    0 0 30px red, 
+    0 0 40px red, 
+    0 0 55px red, 
+    0 0 70px red;
 }
 
 .tweets {
@@ -112,6 +184,14 @@ h3, p {
   padding-right: 10px;
   max-width: 200px;
   max-height: 400px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 1.2rem;
 }
 
 .App {

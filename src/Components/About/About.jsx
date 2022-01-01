@@ -1,7 +1,7 @@
 import React from "react";
 
 // Assets
-import Background from '../../Assets/background.jpg'
+import Background from '../../Assets/neon-upsplash.jpeg'
 
 const About = () => {
   return(
