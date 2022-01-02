@@ -252,47 +252,49 @@ h3, p {
   width: 25%;
   left: 40%;
   top: 10%;
-  /* padding: 10px;
-  margin-bottom: 80px;
-  background-color: linear-gradient(red, blue);
-  border: solid 2px #ffffcc;
-  border-radius: 5%;
-  color: #ffffcc;
-    box-shadow:
-    0 0 1px #fff,
-    0 0 3px red,
-    0 0 10px blue, 
-    0 0 20px red, 
-    0 0 30px red, 
-    0 0 40px red, 
-    0 0 55px red, 
-    0 0 70px red; */
 }
 
-.tweets {
+
+.contact {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  padding: 10%;
+}
+
+.contact-links {
+  align-self: auto;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 40%;
+  margin-left: 40%;
+  padding-top: 15%;
+  height: 10%;
+  width: 15%;
+}
+
+#gitIcon, #mailIcon, #linkedinIcon {
+  width: 100%;
+  height: 100%;
+  padding: 20%;
   margin-left: 10%;
   margin-right: 10%;
-  align-content: center;
   text-align: center;
 }
 
-.contact {
-  margin-top: 5%;
+Timeline {
+  margin-left: 40%;
+  margin-right: 40%;
+  align-content: center;
+  text-align: center;
 }
 
 .about-info {
   margin-top: 0%;
 }
-
-/* .contact-right {
-  text-align: right;
-  justify-content: right;
-  margin-right: 5%;
-  margin-left: 40%;
-  margin-bottom: ;
-  z-index: 1;
-} */
 
 .project-card {
   align-items: center;
