@@ -66,10 +66,12 @@ main {
   background-image: url();
   background-size: auto 100%;
 }
+
 @font-face {
   font-family: neon;
   src: url(/src/Assets/hello-denver-display/hellodenverdisplaybold_v1.6.ttf);
 }
+
 .neon-wrapper {
   animation: pulsate 1.5s infinite alternate;
   box-shadow:
@@ -81,6 +83,7 @@ main {
   inset 0 0 0.5vw  0.2vw #fff7f7;
   border-radius: 1.5rem;
 }
+
 .neon-text {
   font-family:neon;
   font-size: 8rem;
@@ -94,22 +97,6 @@ main {
   .1vw 0vw   1vw #e50b0b, .2vw 0vw   1vw #e50b0b, .4vw 0vw   5vw #e50b0b, 
   .1vw 0vw   5vw #e50b0b, .2vw 0vw  20vw #e50b0b, .4vw 0vw  10vw #e50b0b,
   .1vw 0vw  10vw #e50b0b, .2vw 0vw  30vw #e50b0b, .4vw 0vw  10vw #e50b0b;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  padding: 10px 15px 10px 15px;
-  border-bottom: 2px solid rgb(212, 212, 212);
-}
-
-.navLink {
-  padding-left: 1%;
-  padding-right: 1%;
-  font-family: 'Blinker', sans-serif;
-  font-weight: bold;
-  font-size: 1.0rem;
 }
 
 .neon-button {
@@ -171,6 +158,22 @@ nav {
 .neon-button:hover::after,
 .neon-button:focus::after {
   opacity: 1;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 10px 15px 10px 15px;
+  border-bottom: 2px solid rgb(212, 212, 212);
+}
+
+.navLink {
+  padding-left: 1%;
+  padding-right: 1%;
+  font-family: 'Blinker', sans-serif;
+  font-weight: bold;
+  font-size: 1.0rem;
 }
 
 h1 {
@@ -254,7 +257,6 @@ h3, p {
   top: 10%;
 }
 
-
 .contact {
   display: flex;
   flex-direction: column;
@@ -279,10 +281,27 @@ h3, p {
 #gitIcon, #mailIcon, #linkedinIcon {
   width: 100%;
   height: 100%;
-  padding: 30%;
+  padding-top: 10%;
+  padding-bottom: 50%;
+  padding-left: 20%;
+  padding-right: 20%;
   margin-left: 20%;
   margin-right: 20%;
   text-align: center;
+  background-color: #e50b0b;
+    color: #fff;
+    opacity: .8;
+  font-size: 2vw;
+    font-family: 'opensans-regular', sans-serif;
+    color: #ffffcc;
+    text-shadow: 
+    0 0 5px #fff,
+    0 0 10px #fff, 
+    0 0 20px blue, 
+    0 0 30px blue, 
+    0 0 40px blue, 
+    0 0 55px blue, 
+    0 0 70px blue;
 }
 
 .about-info {
