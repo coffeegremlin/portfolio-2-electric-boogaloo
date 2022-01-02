@@ -198,7 +198,8 @@ h3, p {
 
 #nateimg {
   width: 25%;
-  padding: 30px;
+  padding: 10px;
+  margin-bottom: 80px;
   border: solid 2px #ffffcc;
   border-radius: 5%;
   color: #ffffcc;

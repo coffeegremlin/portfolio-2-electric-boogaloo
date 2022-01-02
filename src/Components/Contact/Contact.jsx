@@ -2,7 +2,7 @@ import React from "react";
 import { Timeline, Tweet } from "react-twitter-widgets";
 
 // Assets
-import Background from '../../Assets/background.jpg'
+import Background from '../../Assets/exit-upsplash.jpeg'
 import GithubSquare from '../../Assets/font-awesome/github-brands.svg'
 import Mail from '../../Assets/font-awesome/envelope-regular.svg'
 import LinkedIn from '../../Assets/font-awesome/linkedin-brands.svg'
