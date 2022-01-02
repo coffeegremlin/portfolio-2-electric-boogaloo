@@ -1,6 +1,50 @@
 :root {
-  --clr-neon: hsl(317 100% 54%);
-  --clr-bg: hsl(323 21% 16%);
+  --clr-neon: rgb(255, 0, 0);
+  --clr-bg: rgb(255, 255, 255);
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px blue,
+      0 0 19px #fff,
+      0 0 40px red,
+      0 0 80px red,
+      0 0 90px red,
+      0 0 100px red,
+      0 0 150px red;
+  }
+  20%, 24%, 55% {       
+    text-shadow: none;
+  }
+}
+
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px blue,
+      0 0 80px blue,
+      0 0 90px blue,
+      0 0 100px blue,
+      0 0 150px blue;
+  }
+  0% {
+    /* A slightly smaller blur radius */
+    text-shadow:
+      0 0 4px #fff,
+      0 0 10px #fff,
+      0 0 18px #fff,
+      0 0 38px blue,
+      0 0 73px blue,
+      0 0 80px blue,
+      0 0 94px blue,
+      0 0 140px blue;
+  }
 }
 
 html,
@@ -13,6 +57,43 @@ main {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   overflow: scroll;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url();
+  background-size: auto 100%;
+}
+@font-face {
+  font-family: neon;
+  src: url(/src/Assets/hello-denver-display/hellodenverdisplaybold_v1.6.ttf);
+}
+.neon-wrapper {
+  animation: pulsate 1.5s infinite alternate;
+  box-shadow:
+  0 0 0.1vw  0.4vw #fff7f7,   
+  0 0 0.4vw  0.6vw #e97272, 
+  0 0   4vw  0.4vw #e50b0b,
+  inset 0 0 1.5vw  0.4vw #e50b0b,
+  inset 0 0 0.4vw  0.2vw #e97272,
+  inset 0 0 0.5vw  0.2vw #fff7f7;
+  border-radius: 1.5rem;
+}
+.neon-text {
+  font-family:neon;
+  font-size: 14rem;
+  color: #ffd8d8;
+  padding: 0 3.5rem 0 3.5rem;
+  text-shadow: 
+  .1vw 0vw .25vw #ffd8d8, .2vw 0vw .25vw #ffd8d8, .4vw 0vw .25vw #ffd8d8, 
+  .1vw 0vw   0vw #f25757, .2vw 0vw   0vw #f25757, .4vw 0vw   0vw #f25757,
+  .1vw 0vw  .1vw #f25757, .2vw 0vw  .1vw #f25757, .4vw 0vw  .1vw #f25757,
+  .1vw 0vw   2vw #f25757, .2vw 0vw   2vw #f25757, .4vw 0vw   2vw #f25757, 
+  .1vw 0vw   1vw #e50b0b, .2vw 0vw   1vw #e50b0b, .4vw 0vw   5vw #e50b0b, 
+  .1vw 0vw   5vw #e50b0b, .2vw 0vw  20vw #e50b0b, .4vw 0vw  10vw #e50b0b,
+  .1vw 0vw  10vw #e50b0b, .2vw 0vw  30vw #e50b0b, .4vw 0vw  10vw #e50b0b;
 }
 
 nav {
@@ -92,49 +173,7 @@ nav {
   opacity: 1;
 }
 
-@keyframes flicker {
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-    text-shadow:
-      0 0 4px #fff,
-      0 0 11px blue,
-      0 0 19px #fff,
-      0 0 40px red,
-      0 0 80px red,
-      0 0 90px red,
-      0 0 100px red,
-      0 0 150px red;
-  }
-  20%, 24%, 55% {       
-    text-shadow: none;
-  }
-}
 
-@keyframes pulsate {
-  100% {
-    /* Larger blur radius */
-    text-shadow:
-      0 0 4px #fff,
-      0 0 11px #fff,
-      0 0 19px #fff,
-      0 0 40px blue,
-      0 0 80px blue,
-      0 0 90px blue,
-      0 0 100px blue,
-      0 0 150px blue;
-  }
-  0% {
-    /* A slightly smaller blur radius */
-    text-shadow:
-      0 0 4px #fff,
-      0 0 10px #fff,
-      0 0 18px #fff,
-      0 0 38px blue,
-      0 0 73px blue,
-      0 0 80px blue,
-      0 0 94px blue,
-      0 0 140px blue;
-  }
-}
 
 h1 {
   text-transform: uppercase;
@@ -196,9 +235,26 @@ h3, p {
   
 }
 
+#myframe {
+  position: relative;
+}
+
+#frame {
+  position: relative;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 60px;
+  top: 0;
+  left: 0;
+  max-width: 60%;
+}
+
 #nateimg {
+  position: absolute;
   width: 25%;
-  padding: 10px;
+  left: 40%;
+  top: 10%;
+  /* padding: 10px;
   margin-bottom: 80px;
   background-color: linear-gradient(red, blue);
   border: solid 2px #ffffcc;
@@ -212,7 +268,7 @@ h3, p {
     0 0 30px red, 
     0 0 40px red, 
     0 0 55px red, 
-    0 0 70px red;
+    0 0 70px red; */
 }
 
 .tweets {
@@ -225,6 +281,10 @@ h3, p {
 
 .contact {
   margin-top: 5%;
+}
+
+.about-info {
+  margin-top: 0%;
 }
 
 /* .contact-right {

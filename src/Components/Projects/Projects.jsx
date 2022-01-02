@@ -20,9 +20,7 @@ const Projects = () => {
               <p>Full Stack app made w/ Django</p>
             </span>
             <footer>
-              <button className="neon-button">
-                <a href="https://codingcooler.herokuapp.com/">Deployed Demo</a>
-              </button>
+              <a href="https://codingcooler.herokuapp.com/" className="neon-button">Deployed Demo</a>
             </footer>
           </section>
 
@@ -35,9 +33,7 @@ const Projects = () => {
               <p>Full Stack collaborative app made w/ React</p>
             </span>
             <footer>
-              <button className="neon-button">
-                <a href="https://lfgpls.herokuapp.com/">Deployed Demo</a>
-              </button>
+              <a href="https://lfgpls.herokuapp.com/" className="neon-button">Deployed Demo</a>
             </footer>
           </section>
 
@@ -50,9 +46,7 @@ const Projects = () => {
               <p>Full Stack app made with the MEN stack using 3rd party API</p>
             </span>
             <footer>
-              <button className="neon-button">
-                <a href="https://monster-hunter-lists.herokuapp.com/">Deployed Demo</a>
-              </button>
+              <a href="https://monster-hunter-lists.herokuapp.com/" className="neon-button">Deployed Demo</a>
             </footer>
           </section>
 
@@ -65,9 +59,7 @@ const Projects = () => {
               <p>Text adventure javaScript based game w/ multiple endings.</p>
             </span>
             <footer>
-              <button className="neon-button">
-                <a href="https://dimwoodadventure.netlify.app/">Deployed Demo</a>
-              </button>
+              <a href="https://dimwoodadventure.netlify.app/" className="neon-button">Deployed Demo</a>
             </footer>
           </section>
 
