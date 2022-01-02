@@ -201,7 +201,7 @@ h3, p {
   /* animation: pulsate 2.5s infinite alternate;  */
   /* animation: pulsate 0.11s ease-in-out infinite alternate;  */
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2vw;
     font-family: 'opensans-regular', sans-serif;
     color: #ffffcc;
     text-shadow: 
@@ -315,10 +315,24 @@ h3, p {
 
 .skills {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 5%;
+  padding-right: 20%;
+  padding-left: 20%;
+  text-align: center;
+  align-content: center;
+}
+
+#languages {
+  display: flex;
+  justify-content: center;
   flex-direction: row;
-  padding-right: 20px;
-  padding-left: 20px;
-  font-size: 1.2rem;
+  flex-wrap: wrap;
+  max-width: 90%;
+  max-height: 70%;
+  font-size: 2vw;
+  padding-bottom: 10%;
 }
 
 .App {
