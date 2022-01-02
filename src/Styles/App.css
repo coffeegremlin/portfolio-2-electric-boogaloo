@@ -96,7 +96,7 @@ nav {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
     text-shadow:
       0 0 4px #fff,
-      0 0 11px #fff,
+      0 0 11px blue,
       0 0 19px #fff,
       0 0 40px red,
       0 0 80px red,
@@ -149,7 +149,7 @@ h1 {
     color: #ffffcc;
     text-shadow: 
     0 0 5px #fff,
-    0 0 10px #fff, 
+    0 0 10px blue, 
     0 0 20px red, 
     0 0 30px red, 
     0 0 40px red, 
@@ -200,12 +200,14 @@ h3, p {
   width: 25%;
   padding: 10px;
   margin-bottom: 80px;
+  background-color: linear-gradient(red, blue);
   border: solid 2px #ffffcc;
   border-radius: 5%;
   color: #ffffcc;
-    box-shadow: 
-    0 0 5px #fff,
-    0 0 10px #fff, 
+    box-shadow:
+    0 0 1px #fff,
+    0 0 3px red,
+    0 0 10px blue, 
     0 0 20px red, 
     0 0 30px red, 
     0 0 40px red, 
