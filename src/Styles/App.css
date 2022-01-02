@@ -173,8 +173,6 @@ nav {
   opacity: 1;
 }
 
-
-
 h1 {
   text-transform: uppercase;
   animation: flicker 1.5s infinite alternate;
@@ -231,8 +229,8 @@ h3, p {
   padding-bottom: 40px;
 }
 
-#myinfo {
-  
+.about-info {
+  padding-bottom: 30%;
 }
 
 #myframe {
