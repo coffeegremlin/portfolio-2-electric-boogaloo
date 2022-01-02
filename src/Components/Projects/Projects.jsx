@@ -8,9 +8,8 @@ const Projects = () => {
   return (
     <>
       <div className='background-img' style={{backgroundImage: `url(${Background})`}}>
-        <h1>My Projects</h1>
+        <h1 className="neon-text">My Projects</h1>
         <div className='project-card'>
-
           <section className="card" id="coding-cooler">
           <a href="https://github.com/coffeegremlin/codingcooler">
             <img src={Git} alt="github repo for coding cooler"/>

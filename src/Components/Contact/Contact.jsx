@@ -13,10 +13,8 @@ const Contact = () => {
     <>
       <div className='background-img' style={{ backgroundImage: `url(${Background})`}}>
         <div className='contact'>
-          <h1>Contact:</h1>
+          <h1 className="neon-text">Contact:</h1>
           <h3>Drop a line sometime! Here's some ways to reach out to me. Thanks for stopping by!</h3>
-          <h3>My links!</h3>
-
           <div className='contact-links'>
             <a className="neon-wrapper" id="gitIcon" href="https://github.com/coffeegremlin">GitHub<img src={GithubSquare} alt="github" /></a>
             <a className="neon-wrapper" id="mailIcon" href="mailto:natemausert@gmail.com">Mail<img src={Mail} alt='My email'/></a>

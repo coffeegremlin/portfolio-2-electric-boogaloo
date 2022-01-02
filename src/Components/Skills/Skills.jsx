@@ -8,8 +8,8 @@ const Skills = () => {
   return (
     <>
       <div className='background-img' style={{backgroundImage: `url(${Background})`}}>
+        <h1 className='neon-text' id='skillstitle'>Skills and Tech</h1>
         <div className='skills'>
-        <h1 id='skillstitle'>Skills and Tech</h1>
 
           <div className='neon-wrapper' id='languages'>
             <h3>Languages</h3>
