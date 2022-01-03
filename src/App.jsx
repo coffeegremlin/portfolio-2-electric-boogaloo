@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './Styles/App.css';
 
@@ -11,7 +10,6 @@ import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact';
 import Skills from './Components/Skills/Skills';
 
-// need home, contact, skills, projects, about me pages
 
 const App = () => {
   // add in any kind of functionality I want to implement later here
