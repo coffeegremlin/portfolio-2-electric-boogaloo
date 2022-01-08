@@ -18,6 +18,7 @@ const Home = (props) => {
           <h3 id='splash-logo'>Hey there, welcome to my portfolio!</h3>
           <p>I'm Nathan Mausert, and I'm a full-stack software engineer with a focus on web development.</p>
         </div>
+        <p>© Nathan Mausert 2022</p>
       </div>
     </>
   )

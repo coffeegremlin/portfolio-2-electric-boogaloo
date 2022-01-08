@@ -1,4 +1,5 @@
 import React from "react";
+import '../../Styles/App.css'
 
 // Assets
 import Background from '../../Assets/neon-upsplash.jpeg'
@@ -7,9 +8,10 @@ import Git from '../../Assets/font-awesome/git-alt-brands.svg'
 const Projects = () => {
   return (
     <>
+    <body>
       <div className='background-img' style={{backgroundImage: `url(${Background})`}}>
-        <h1 className="neon-text">My Projects</h1>
-        <div className='project-card'>
+        <h1 className="neon-text" id="projectstitle">My Projects</h1>
+        <div className='projects-card'>
           <section className="card" id="coding-cooler">
           <a href="https://github.com/coffeegremlin/codingcooler">
             <img src={Git} alt="github repo for coding cooler"/>
@@ -64,6 +66,7 @@ const Projects = () => {
 
         </div>
       </div>
+      </body>
     </>
   )
 }

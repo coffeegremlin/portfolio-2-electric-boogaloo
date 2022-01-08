@@ -54,7 +54,6 @@ main {
   overflow: hidden;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  overflow: scroll;
 }
 
 .wrapper {
@@ -216,14 +215,21 @@ h3, p {
 }
 
 .background-img {
-  height: 150%;
+  height: 100%;
+  width: 100%;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   flex-direction: column;
   justify-content: center;
   background-size: cover;
   background-position: center center;
-  z-index: 1;
+  position: fixed;
+  overflow: scroll;
+  /* background-image: url("/static/images/tree_background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+  /* Matt is the sweetest friend ^^^ */
 }
 
 #myname {
@@ -235,6 +241,7 @@ h3, p {
 }
 
 #myframe {
+  margin-top: 30%;
   position: relative;
 }
 
@@ -303,10 +310,14 @@ h3, p {
 }
 
 .about-info {
-  margin-top: 0%;
+  margin-top: 30%;
 }
 
-.project-card {
+#projectstitle {
+  margin-top: 5%;
+}
+
+.projects-card {
   align-items: center;
   max-height: 80%;
   max-width: 90%;
@@ -323,6 +334,10 @@ h3, p {
   padding-right: 10px;
   max-width: 200px;
   max-height: 400px;
+}
+
+#skillstitle {
+  margin-top: 30%;
 }
 
 .skills {
