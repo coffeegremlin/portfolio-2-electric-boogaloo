@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import '../../Styles/App.css'
 
 // Components and assets, together at last
 

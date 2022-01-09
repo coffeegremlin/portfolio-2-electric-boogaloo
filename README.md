@@ -8,6 +8,7 @@
 - Add mobile responsive design
 - Add in audio player
 - Change style of nav bar
+
 ### Technologies used
 
 - Made with [React](https://github.com/facebook/create-react-app)
